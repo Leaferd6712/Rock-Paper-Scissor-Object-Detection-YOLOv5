@@ -7,6 +7,8 @@ This repository contains a **real-time Rock Paper Scissors hand gesture detectio
 The project demonstrates how to **run a pretrained YOLOv5 model** to detect Rock, Paper, and Scissors using your **webcam**.
 No training is required as the model is already trained and ready to use.
 
+[Demo Video Link (Google Drive)](https://drive.google.com/file/d/16yttS6cGm4tf4giYn9Q5FLb1GhF1o0eB/view?usp=sharing)
+
 ---
 
 ## 🚀 Features
