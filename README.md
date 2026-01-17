@@ -1,111 +1,233 @@
-Rock Paper Scissors Object Detection using YOLOv5
-- The Object Detection Model is Pretrained (no need to train on your device)
-- This project uses YOLOv5 and computer vision to detect Rock, Paper, and Scissors hand gestures in real time using your webcam
-- These instructions are for Windows using PowerShell
-- Adjust code for Linux/Apple
+# ✊✋✌️ Rock Paper Scissors Object Detection using YOLOv5 | Pretrained Model Demo
 
-Dataset Link:
-https://universe.roboflow.com/mathias-p/rock-paper-scissors-y8qwz
+This repository contains a **real-time Rock Paper Scissors hand gesture detection system** using **YOLOv5** and Computer Vision.
 
-Requirements:
-- Python 3.8 or newer
-- Git
-- A webcam
+The project demonstrates how to **run a pretrained YOLOv5 model** to detect Rock, Paper, and Scissors using your **webcam**.
+No training is required — the model is already trained and ready to use.
 
-Enter this to confirm your python version!
-Enter THIS:
+---
+
+## 🚀 Features
+
+* 🎥 Real-time webcam detection
+* 🧠 Pretrained YOLOv5 model (no training required)
+* ✊✌️ Detects Rock, Paper, Scissors
+* ⚡ Fast and lightweight
+* 🖥️ Easy setup on Windows (PowerShell)
+* 🔒 No extra apps required — works on restricted school/student laptops
+
+---
+
+## 🧰 Tech Stack
+
+* Python 🐍
+* YOLOv5 (Ultralytics)
+* PyTorch
+* OpenCV
+* NumPy
+
+---
+
+## 📦 Dataset
+
+Dataset used to train the model:
+
+🔗 Roboflow Dataset:
+[https://universe.roboflow.com/mathias-p/rock-paper-scissors-y8qwz](https://universe.roboflow.com/mathias-p/rock-paper-scissors-y8qwz)
+
+---
+
+## 🛠 Requirements
+
+* Python 3.8 or newer
+* Visual Studio Code (VS Code) — can be installed from Microsoft Store
+* A webcam
+
+---
+
+## 🐍 Installing Python (IMPORTANT)
+
+If you do not already have Python installed:
+
+1. Go to this website:
+   [https://www.python.org/downloads/release/python-3100/](https://www.python.org/downloads/release/python-3100/)
+
+2. Click:
+   Windows installer (64-bit)
+
+3. Open the downloaded installer.
+
+4. On the first installer screen, MAKE SURE you:
+
+   * Tick the box: Add Python to PATH
+
+5. Then click:
+
+   * Install Now
+
+6. After it finishes installing, **close any open PowerShell or Terminal windows**.
+
+7. Open PowerShell again:
+
+   * Press Windows Key + X
+   * Click Terminal or PowerShell
+
+8. Check that Python works:
+
+```
 python --version
+```
 
+---
 
-FULL SETUP GUIDE (STEP BY STEP)
+## 🚀 FULL SETUP GUIDE (STEP BY STEP)
 
-Step 1 - Open PowerShell
+### 🔹 Step 1 — Download the Repository
+
+1. Go to this page in your browser:
+   [https://github.com/Leaferd6712/Rock-Paper-Scissor-Object-Detection-YOLOv5](https://github.com/Leaferd6712/Rock-Paper-Scissor-Object-Detection-YOLOv5)
+
+2. Click the green button **Code → Download ZIP**
+
+3. Extract that folder and keep it in the Downloads
+
+---
+
+### 🔹 Step 2 — Open PowerShell and Go to the Project Folder
+
 On Windows:
-Press Windows key + X, then click Terminal
 
+* Press Windows Key + X
+* Click Terminal or PowerShell
 
-Step 2 - Clone the Repository
-Enter THIS:
-git clone https://github.com/Leaferd6712/Rock-Paper-Scissor-Object-Detection-YOLOv5.git
+Now enter this (IMPORTANT: change the username part if your Windows username is different):
 
-Enter THIS:
-cd Rock-Paper-Scissor-Object-Detection-YOLOv5
+```
+cd "C:\Users\Anisa\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock_Paper_Scissors_Detection"
+```
 
+(Only the "Anisa" part may need to be changed to your own username.)
 
-Step 3 - How To Find Your Folder Path
-If you ever need to find the full path of your project folder:
+---
 
-On Windows:
-Method 1:
-Open File Explorer
-Go to the folder
-Click the address bar
-Copy the path
+### 🔹 Step 3 — Create a Virtual Environment (Only Once)
 
-Method 2:
-Hold Shift
-Right-click the folder
-Click "Copy as path"
+Make sure you are inside the project folder:
 
-Then in PowerShell:
-Enter THIS:
-cd "PASTE_THE_PATH_HERE"
-
-
-Step 4 - Create a Virtual Environment (Only Once)
-Make sure you are inside the project folder first.
-
-Enter THIS:
+```
 python -m venv yolovenv
+```
 
+---
 
-Step 5 - Activate the Virtual Environment
-On Windows (PowerShell):
+### 🔹 Step 4 — Activate the Virtual Environment
 
-Enter THIS:
+In PowerShell:
+
+```
 .\yolovenv\Scripts\Activate.ps1
+```
 
-If it worked, you should see (yolovenv) in the terminal.
+If successful, you should see:
 
-If PowerShell blocks it:
-Enter THIS:
+```
+(yolovenv)
+```
+
+If PowerShell blocks it, run:
+
+```
 Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+```
 
 Then try again:
-Enter THIS:
+
+```
 .\yolovenv\Scripts\Activate.ps1
+```
 
+---
 
-Step 6 - Install Dependencies
-Enter THIS:
+### 🔹 Step 5 — Install Dependencies (IMPORTANT)
+
+Make sure you see:
+
+(yolovenv)
+
+First, upgrade pip inside the virtual environment:
+
+```
+python -m pip install --upgrade pip
+```
+
+Then install the requirements:
+
+```
 pip install -r requirements.txt
+```
 
+---
 
-Step 7 - Go To Your Actual Project Folder
-Your project folder is located at:
-C:\Users\mcmat\Documents\Optimised_Rock_Paper_Scissors
+### 🔹 Step 6 — Run the Rock Paper Scissors Detector
 
-Enter THIS:
-cd "C:\Users\mcmat\Documents\Optimised_Rock_Paper_Scissors"
-
-(Use the copy path method above to get the correct path.)
-
-
-Step 8 - Run the Rock Paper Scissors Detector
-Enter THIS:
+```
 python detect.py --weights runs/train/third_run/weights/best.pt --source 0 --img-size 640 --conf-thres 0.25 --device 0
+```
 
-What this does:
-Opens your webcam
-Uses your trained YOLOv5 model
-Detects Rock, Paper, Scissors in real time
+---
 
-How to run it again next time:
-Enter THIS:
-cd "YOUR_PROJECT_FOLDER_PATH"
+## 💡 Understanding Command Options
 
-Enter THIS:
-Activate the virtual environment again (same command as Step 5)
+Here’s what the main options mean:
 
-Enter THIS:
+* `--conf-thres 0.25`
+  Controls how confident the model must be before showing a detection.
+
+  * 0.10 → more detections but more errors
+  * 0.25 → good balance (default)
+  * 0.50 → fewer detections but more accurate
+
+* `--device 0`
+  Selects which hardware to use:
+
+  * `0` → first GPU (if available)
+  * `cpu` → force CPU
+  * If no GPU is available, YOLO automatically uses CPU
+
+---
+
+## 🎯 What This Does
+
+* Opens your webcam
+* Loads the trained YOLOv5 model
+* Detects Rock, Paper, Scissors in real time
+
+---
+
+## 🔁 How to Run It Again Later
+
+Go to the project folder (remember to change the username part if needed):
+
+```
+cd "C:\Users\Anisa\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock_Paper_Scissors_Detection"
+```
+
+Activate the virtual environment:
+
+```
+.\yolovenv\Scripts\Activate.ps1
+```
+
+Run the detector:
+
+```
 python detect.py --weights runs/train/third_run/weights/best.pt --source 0 --img-size 640 --conf-thres 0.25 --device 0
+```
+
+---
+
+## 🧠 Notes
+
+* Make sure your webcam is not being used by another app
+* Press Q to quit the detection window
+
