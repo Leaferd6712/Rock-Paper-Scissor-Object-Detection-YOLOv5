@@ -1,3 +1,5 @@
+<video src="Rock Paper Scissor Model Demo.mp4" width="600" controls></video>
+
 # ✊✋✌️ Rock Paper Scissors Object Detection using YOLOv5 | Pretrained Model Demo
 
 This repository contains a **real-time Rock Paper Scissors hand gesture detection system** using **YOLOv5** and Computer Vision.
