@@ -3,7 +3,7 @@
 This repository contains a **real-time Rock Paper Scissors hand gesture detection system** using **YOLOv5** and Computer Vision.
 
 The project demonstrates how to **run a pretrained YOLOv5 model** to detect Rock, Paper, and Scissors using your **webcam**.
-No training is required — the model is already trained and ready to use.
+No training is required as the model is already trained and ready to use.
 
 ---
 
@@ -103,10 +103,10 @@ On Windows:
 Now enter this (IMPORTANT: change the username part if your Windows username is different):
 
 ```
-cd "C:\Users\Anisa\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock_Paper_Scissors_Detection"
+cd "C:\Users\YOURUSERNAME\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master"
 ```
 
-(Only the "Anisa" part may need to be changed to your own username.)
+(Only the "YOURUSERNAME" part may need to be changed to your own username, otherwise the full path should work if it is kept in the downloads section of your files)
 
 ---
 
@@ -209,7 +209,7 @@ Here’s what the main options mean:
 Go to the project folder (remember to change the username part if needed):
 
 ```
-cd "C:\Users\Anisa\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock_Paper_Scissors_Detection"
+cd "C:\Users\YOURUSERNAME\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master"
 ```
 
 Activate the virtual environment:
