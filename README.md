@@ -37,7 +37,7 @@ No training is required as the model is already trained and ready to use.
 Dataset used to train the model:
 
 🔗 Roboflow Dataset:
-[https://universe.roboflow.com/mathias-p/rock-paper-scissors-y8qwz](https://universe.roboflow.com/mathias-p/rock-paper-scissors-y8qwz)
+[https://universe.roboflow.com/mathias-p/rock-paper-scissors-don-t-delete](https://universe.roboflow.com/mathias-p/rock-paper-scissors-don-t-delete)
 
 ---
 
