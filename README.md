@@ -104,13 +104,13 @@ On Windows:
 * Press Windows Key + X
 * Click Terminal or PowerShell
 
-Now enter this (IMPORTANT: change the username part if your Windows username is different):
+Now enter this (IMPORTANT: change the username part):
 
 ```
 cd "C:\Users\YOURUSERNAME\Downloads\Rock-Paper-Scissor-Object-Detection-YOLOv5-master\Rock-Paper-Scissor-Object-Detection-YOLOv5-master"
 ```
 
-(Only the "YOURUSERNAME" part may need to be changed to your own username, otherwise the full path should work if it is kept in the downloads section of your files)
+(Only the "YOURUSERNAME" part may need to be changed to your own username, otherwise the full path should work if it is kept in the downloads section of your files. Search what is my windows username for tutorials on Google.)
 
 ---
 
