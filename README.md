@@ -9,6 +9,9 @@ No training is required as the model is already trained and ready to use.
 
 [Demo Video Link (Google Drive)](https://drive.google.com/file/d/16yttS6cGm4tf4giYn9Q5FLb1GhF1o0eB/view?usp=sharing)
 
+**Quick Metrics:**
+![Screenshot](Screenshot%202026-01-26%20174840.png)
+
 ---
 
 ## 🚀 Features
