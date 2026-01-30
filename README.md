@@ -1,4 +1,4 @@
-<video src="Rock Paper Scissor Model Demo.mp4" width="600" controls></video>
+   <video src="Rock Paper Scissor Model Demo.mp4" width="600" controls></video>
 
 # ✊✋✌️ Rock Paper Scissors Object Detection using YOLOv5 | Pretrained Model Demo
 
